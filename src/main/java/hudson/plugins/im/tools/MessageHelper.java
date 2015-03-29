@@ -30,7 +30,7 @@ public class MessageHelper {
 	 */
 	public static String getBuildURL(AbstractBuild<?, ?> build) {
 		// The hudson's base url
-	    final StringBuilder builder;
+	    /*final StringBuilder builder;
 	    if (Hudson.getInstance() != null) {
 	        builder = new StringBuilder(
 				String.valueOf(Hudson.getInstance().getRootUrl()));
@@ -42,7 +42,8 @@ public class MessageHelper {
 		// characters
 		builder.append(Util.encode(build.getUrl()));
 
-		return builder.toString();
+		return builder.toString();*/
+		return String.format("http://files.inpureprojects.info/maven/info/inpureprojects/%s", build.getProject().getDisplayName().replace(" ", "%20"));
 	}
 
 	/**

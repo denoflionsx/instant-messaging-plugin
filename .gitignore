@@ -2,3 +2,11 @@
 /.project
 /.classpath
 /.settings
+/.idea
+*.env
+*.iml
+*.log
+*.ipr
+*.iws
+*.gradle
+*.lck
